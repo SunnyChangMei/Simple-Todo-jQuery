@@ -1,0 +1,92 @@
+body {
+  background: #355C7D;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+  background-color: #2980b9;
+  color: whitesmoke;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+
+/* every other li use 2n */
+li:nth-child(2n) {
+  background-color: #f7f7f7;
+}
+
+span {
+  background-color: rgba(185, 24, 24, 0.692);
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0;
+  display: inline-block;
+  transition: 0.2s linear;
+  /* hide the icon trash can */
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  /* show icon trash can */
+  opacity: 1.0;
+}
+
+input {
+  font-size: 18px;
+  color: #2980b9;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  /* fix the input box size */
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+/* change background color when click the input box */
+input:focus {
+  background-color: white;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+.container {
+  /* border: 2px solid grey; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background-color: #f7f7f7;
+  width: 360px;
+  margin: 100px auto;
+}
+
+.completed {
+  color: grey;
+  text-decoration: line-through;
+}
+
+
+.fa-plus {
+  float: right;
+}
